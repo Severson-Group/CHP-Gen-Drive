@@ -1,0 +1,7 @@
+*.cproject
+notebooks/.ipynb_checkpoints/
+*.ld
+*.spec
+.metadata/
+Debug/
+Release/
