@@ -1,13 +1,13 @@
-#ifdef APP_GEN_CONTROLLER
+#ifdef APP_CVCR
 
-#include "usr/gen_control/app_gen_controller.h"
-#include "usr/gen_control/cmd/cmd_gen_cntrl.h"
+#include "usr/cvcr/app_cvcr.h"
+#include "usr/cvcr/cmd/cmd_cvcr.h"
 #include "drv/gp3io_mux.h"
 
-void app_gen_controller_init(void)
+void app_cvcr_init(void)
 {
 	// Register App Commands
-	cmd_gen_ctrl_register();
+	cmd_cvcr_register();
 
     // Set up GPIO mux for the AMDS board
 	// GP3IO_MUX_1_BASE_ADDR means top AMDC port
@@ -16,4 +16,4 @@ void app_gen_controller_init(void)
 	gp3io_mux_set_device(GP3IO_MUX_2_BASE_ADDR, GP3IO_MUX_DEVICE1);
 }
 
-#endif // APP_GEN_CONTROLLER
+#endif // APP_CVCR

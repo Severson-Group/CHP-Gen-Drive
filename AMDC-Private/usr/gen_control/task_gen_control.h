@@ -11,6 +11,7 @@ int task_gen_controller_deinit(void);
 
 void task_gen_controller_callback(void *arg);
 
+int task_gen_controller_set_curr_channel(int channel);
 int task_gen_controller_set_frequency(double freq);
 int task_gen_controller_set_amplitude(double amplitude);
 

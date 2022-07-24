@@ -1,0 +1,19 @@
+#ifndef POWER_STACK_H
+#define POWER_STACK_H
+
+#define POWERSTACK_DEADTIME (2050.0)
+#define POWERSTACK_PWM_FREQ (20000)
+
+#define OP_LIMIT_VDC (100)
+#define OP_LIMIT_PHASE_CURRENT (20)
+
+#define PWM_U	0
+#define PWM_V	1
+#define PWM_W	2
+
+// VSI Setup
+#define PHASE_U_VOLTAGE_PWM_CHANNEL (0)
+#define PHASE_V_VOLTAGE_PWM_CHANNEL (1)
+#define PHASE_W_VOLTAGE_PWM_CHANNEL (2)
+
+#endif // POWER_STACK_H

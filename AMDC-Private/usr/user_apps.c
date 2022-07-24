@@ -20,6 +20,14 @@
 #include "usr/gen_control/app_gen_controller.h"
 #endif
 
+#ifdef APP_CURRREG
+#include "usr/currReg/app_currReg.h"
+#endif
+
+#ifdef APP_CVCR
+#include "usr/cvcr/app_cvcr.h"
+#endif
+
 #ifdef APP_BETA_LABS
 #include "usr/beta_labs/app_beta_labs.h"
 #endif
@@ -44,6 +52,14 @@ void user_apps_init(void)
 
 #ifdef APP_GEN_CONTROLLER
     app_gen_controller_init();
+#endif
+
+#ifdef APP_CURRREG
+    app_currReg_init();
+#endif
+
+#ifdef APP_CVCR
+    app_cvcr_init();
 #endif
 
 #ifdef APP_BETA_LABS
